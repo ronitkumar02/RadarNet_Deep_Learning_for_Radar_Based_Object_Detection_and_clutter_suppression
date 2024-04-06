@@ -32,12 +32,11 @@ RadarNet is a project dedicated to developing a robust deep neural network using
 ### Using the Pre-trained Model:
 We have provided a pre-trained model for immediate use.
 To utilize the pre-trained model:
-1. Load the pre-trained model.
-2. Input the radar image(s) of interest.
+1. Resize the image to size (374,500,3)
+2. run the `RunPreTrainedModel(images_path)`
 3. Examine the results.
 
 Feel free to experiment with different radar images and configurations to observe the model's performance.
- 
 
 
 **Keywords**: Radar, Object Detection, Deep Learning, MATLAB, Autonomous Systems
