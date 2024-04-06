@@ -6,8 +6,8 @@ function RunPreTrainedModel(imgs)
     resp_act = predict(net,imgs_input);
     resp_act(resp_act<0) = 0;
     resp_act = resp_act/max(resp_act(:));
-    filename = sprintf('image_%d.png', ind); % You can change the file format if needed
-    imwrite(resp_act, filename);
+    %filename = sprintf('image_%d.png', ind); % You can change the file format if needed
+    %imwrite(resp_act, filename);
     
     fh = figure;
     
@@ -21,7 +21,7 @@ function RunPreTrainedModel(imgs)
     
     % Replace black pixels with 1 1 1
     image(mask) = 1;
-    imshow(imgs_input);
+    imshow(image);
     clim([-120 20])
     colorbar
     axis on
