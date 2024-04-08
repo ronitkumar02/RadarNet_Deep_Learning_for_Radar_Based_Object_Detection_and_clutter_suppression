@@ -1,4 +1,4 @@
-function ppiNoClutter(Length, Width, Height, Filename,random_m,random_m1,random_k,random_k1,random_t_ang,random_t_deg,random_t_deg1)
+function ppiNoClutter(Length,Length1,Width,Width1, Height,Height1, Filename,random_m,random_m1,random_k,random_k1,random_t_ang,random_t_deg,random_t_deg1)
     rng default
 
     freq   = 10e9; % Hz
@@ -56,7 +56,7 @@ function ppiNoClutter(Length, Width, Height, Filename,random_m,random_m1,random_
     
     %tgtdims = struct('Length',120,'Width',18,'Height',22,'OriginOffset',[0 0 0]); % m
     tgtdims = struct('Length',Length,'Width',Width,'Height',Height,'OriginOffset',[0 0 0]);
-    tgtdims1 = struct('Length',Length,'Width',Width,'Height',Height,'OriginOffset',[0 0 0]);% m
+    tgtdims1 = struct('Length',Length1,'Width',Width1,'Height',Height1,'OriginOffset',[0 0 0]);% m
     tgtrcs = 40;  % dBsm
     tgtrcs1=40;
     m=random_m;
