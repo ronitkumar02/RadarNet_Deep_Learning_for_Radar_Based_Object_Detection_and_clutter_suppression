@@ -2,6 +2,20 @@
 
 RadarNet is a project dedicated to developing a robust deep neural network using MATLAB for object detection from radar-captured images. Leveraging the unique capabilities of radar sensing and the power of deep learning, our primary objective is to significantly enhance object detection accuracy and reliability in real-world scenarios.
 
+## Sample & Results
+### Sample Dataset Images
+[!Sample 1](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/sample.png)
+
+[!Sample 2](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/sample2.png)
+
+### Results
+[!fig 1](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/fig1.png)
+
+[!fig 2](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/fig2.png)
+
+[!fig 3](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/fig3.png)
+
+[!fig 4](https://github.com/ronitkumar02/RadarNet_Deep_Learning_for_Radar_Based_Object_Detection_and_clutter_suppression/blob/main/results%20and%20samples/fig4.png)
 ## Key Objectives:
 
 1. **Enhanced Detection Accuracy**: By harnessing the strengths of radar technology and deep learning algorithms, RadarNet aims to achieve superior detection accuracy compared to traditional methods.
