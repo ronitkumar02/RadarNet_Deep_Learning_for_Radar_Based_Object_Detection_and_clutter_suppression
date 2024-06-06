@@ -6,7 +6,7 @@ for ind = 1:size(imgs,4)
     resp_act = predict(net,imgs(:,:,:,ind));
     resp_act(resp_act<0) = 0;
     resp_act = resp_act/max(resp_act(:));
-    filename = sprintf('image_5.png', ind); % You can change the file format if needed
+    filename = sprintf('image_%2.png', ind); % You can change the file format if needed
     imwrite(resp_act(:,:,:,ind), filename);
     
     fh = figure;
