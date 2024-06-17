@@ -11,11 +11,11 @@ function ppiClutter(Length,Length1,Width,Width1, Height,Height1, Filename,random
     array    = phased.ULA(numelems,lambda/2);
     array.Element.BackBaffled = true;
 
-    rotrate   = 50/60*360;   % deg/sec
-    rotperiod = 360/rotrate; % sec
+    rotrate   = 50/60*360;   % 300deg/sec
+    rotperiod = 360/rotrate; % 1.2sec
     
-    npulses = ceil(360/azbw);
-    prf = npulses/rotperiod; % Hz
+    npulses = ceil(360/azbw); %360
+    prf = npulses/rotperiod; % 360/1.2=300Hz
     
     sampleRate = 1/range2time(rngres); % Hz
     sampleRate = prf*round(sampleRate/prf);
@@ -82,7 +82,7 @@ function ppiClutter(Length,Length1,Width,Width1, Height,Height1, Filename,random
     maxGndRng = seaLength/2;
     azCov = 16*azbw;
     azCen = 0;
-    reg = ringClutterRegion(clut,minGndRng,maxGndRng,azCov,azCen);
+    reg = ringClutterRegion(clut,minGndRng,maxGndRng,azCov,azCen);%max=16,16/25,16/50,16/75
     
     resp = phased.RangeResponse('RangeMethod','Matched filter','SampleRate',sampleRate);
     mfc = getMatchedFilter(rdr.Waveform);
@@ -106,7 +106,8 @@ function ppiClutter(Length,Length1,Width,Width1, Height,Height1, Filename,random
     while advance(scenario)
         % Advance frame
         frame = frame + 1;
-        reg.AzimuthCenter = (frame-1)*rotrate/prf;
+        reg.AzimuthCenter = (frame-1)*rotrate/prf;  %rotrate=300Hz,prf=300
+        %rotperiod=1.2 npulses=360
     
         % Collect IQ data 
         iqsig = receive(scenario);
